@@ -5,21 +5,53 @@ import fraud from "@/assets/proj-fraud.jpg";
 
 export const profile = {
   name: "A Ramcharan",
-  role: "Full Stack Developer & AI Enthusiast",
+  role: "Full Stack Developer & ML Engineer",
   tagline:
-    "I build MERN stack applications with smooth user flows, secure backends, and intelligent data systems.",
-  email: "ramcharan@example.com",
+    "B.Tech CSE student at LPU and ML Engineer Intern — building MERN applications and intelligent ML systems that solve real problems.",
+  email: "ramcharan8206@gmail.com",
+  phone: "+91 8688661171",
   github: "https://github.com/",
   linkedin: "https://linkedin.com/",
-  location: "India",
+  location: "Punjab, India",
 };
 
+export const experience = [
+  {
+    role: "Machine Learning Engineer Intern",
+    company: "Pratinik Infotech",
+    period: "Mar 2026 — Present",
+    description:
+      "Developing and deploying advanced ML models. Owning data preprocessing, feature engineering, and algorithm selection to ship production-ready AI solutions.",
+  },
+];
+
+export const education = [
+  {
+    school: "Lovely Professional University (LPU)",
+    degree: "B.Tech — Computer Science and Engineering",
+    period: "2024 — 2028",
+    location: "Punjab, India",
+  },
+  {
+    school: "Brahmarshi EM High School",
+    degree: "High School",
+    period: "2021 — 2022",
+    location: "India",
+  },
+];
+
+export const certificates = [
+  "Microsoft Azure AI Fundamentals",
+  "Microsoft Azure Data Fundamentals",
+  "Microsoft Azure Fundamentals",
+];
+
 export const skills = [
-  { group: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"] },
-  { group: "Backend", items: ["Node.js", "Express", "REST APIs", "JWT Auth", "WebSockets"] },
-  { group: "Database", items: ["MongoDB", "PostgreSQL", "Mongoose", "Prisma"] },
-  { group: "AI / ML", items: ["Python", "TensorFlow", "scikit-learn", "Pandas", "OpenAI API"] },
-  { group: "Tools", items: ["Git", "Docker", "Postman", "Vercel", "Automation"] },
+  { group: "Languages", items: ["C", "C++", "Python", "Java", "JavaScript"] },
+  { group: "Web / MERN", items: ["React", "Node.js", "Express", "MongoDB", "REST APIs"] },
+  { group: "AI / ML", items: ["Azure ML", "scikit-learn", "TensorFlow", "Pandas", "Feature Engineering"] },
+  { group: "Cloud", items: ["AWS", "Microsoft Azure", "Azure AI Services"] },
+  { group: "Core CS", items: ["Data Structures", "Algorithms", "Automation Tools", "Problem Solving"] },
 ];
 
 export type Project = {
@@ -40,16 +72,16 @@ export const projects: Project[] = [
     title: "LPUCure",
     category: "Healthcare Platform",
     short:
-      "A full-stack healthcare platform connecting students with on-campus medical support, appointments and live consultations.",
+      "A comprehensive MERN-stack medical service ecosystem for LPU students and staff, combining AI and advanced DSA.",
     description:
-      "LPUCure is a MERN-stack healthcare web app designed to streamline medical support for university students. It features secure authentication, role-based dashboards for students and doctors, real-time appointment booking, and a digital health records system. Built with a focus on accessibility, smooth UX, and reliable data flow.",
+      "LPUCure is a MERN-stack medical service ecosystem built for the students and staff of Lovely Professional University. It integrates Artificial Intelligence and advanced Data Structures & Algorithms to solve real-world healthcare and logistical challenges across a massive campus — from triage and appointments to medicine logistics and emergency routing.",
     highlights: [
-      "Role-based JWT authentication for students, doctors and admins",
+      "AI-assisted symptom triage and doctor recommendation",
+      "Graph & queue-based DSA for emergency routing on campus",
+      "Role-based dashboards for students, doctors and admins",
       "Real-time appointment scheduling with conflict detection",
-      "Digital prescription & medical history records",
-      "Responsive dashboard with appointment analytics",
     ],
-    stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind", "JWT"],
+    stack: ["React", "Node.js", "Express", "MongoDB", "Python", "AI"],
     image: lpucure,
     accent: "from-cyan-400 to-violet-500",
   },
