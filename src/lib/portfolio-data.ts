@@ -5,21 +5,53 @@ import fraud from "@/assets/proj-fraud.jpg";
 
 export const profile = {
   name: "A Ramcharan",
-  role: "Full Stack Developer & AI Enthusiast",
+  role: "Full Stack Developer & ML Engineer",
   tagline:
-    "I build MERN stack applications with smooth user flows, secure backends, and intelligent data systems.",
-  email: "ramcharan@example.com",
+    "B.Tech CSE student at LPU and ML Engineer Intern — building MERN applications and intelligent ML systems that solve real problems.",
+  email: "ramcharan8206@gmail.com",
+  phone: "+91 8688661171",
   github: "https://github.com/",
   linkedin: "https://linkedin.com/",
-  location: "India",
+  location: "Punjab, India",
 };
 
+export const experience = [
+  {
+    role: "Machine Learning Engineer Intern",
+    company: "Pratinik Infotech",
+    period: "Mar 2026 — Present",
+    description:
+      "Developing and deploying advanced ML models. Owning data preprocessing, feature engineering, and algorithm selection to ship production-ready AI solutions.",
+  },
+];
+
+export const education = [
+  {
+    school: "Lovely Professional University (LPU)",
+    degree: "B.Tech — Computer Science and Engineering",
+    period: "2024 — 2028",
+    location: "Punjab, India",
+  },
+  {
+    school: "Brahmarshi EM High School",
+    degree: "High School",
+    period: "2021 — 2022",
+    location: "India",
+  },
+];
+
+export const certificates = [
+  "Microsoft Azure AI Fundamentals",
+  "Microsoft Azure Data Fundamentals",
+  "Microsoft Azure Fundamentals",
+];
+
 export const skills = [
-  { group: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"] },
-  { group: "Backend", items: ["Node.js", "Express", "REST APIs", "JWT Auth", "WebSockets"] },
-  { group: "Database", items: ["MongoDB", "PostgreSQL", "Mongoose", "Prisma"] },
-  { group: "AI / ML", items: ["Python", "TensorFlow", "scikit-learn", "Pandas", "OpenAI API"] },
-  { group: "Tools", items: ["Git", "Docker", "Postman", "Vercel", "Automation"] },
+  { group: "Languages", items: ["C", "C++", "Python", "Java", "JavaScript"] },
+  { group: "Web / MERN", items: ["React", "Node.js", "Express", "MongoDB", "REST APIs"] },
+  { group: "AI / ML", items: ["Azure ML", "scikit-learn", "TensorFlow", "Pandas", "Feature Engineering"] },
+  { group: "Cloud", items: ["AWS", "Microsoft Azure", "Azure AI Services"] },
+  { group: "Core CS", items: ["Data Structures", "Algorithms", "Automation Tools", "Problem Solving"] },
 ];
 
 export type Project = {
