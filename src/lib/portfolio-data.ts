@@ -72,16 +72,16 @@ export const projects: Project[] = [
     title: "LPUCure",
     category: "Healthcare Platform",
     short:
-      "A full-stack healthcare platform connecting students with on-campus medical support, appointments and live consultations.",
+      "A comprehensive MERN-stack medical service ecosystem for LPU students and staff, combining AI and advanced DSA.",
     description:
-      "LPUCure is a MERN-stack healthcare web app designed to streamline medical support for university students. It features secure authentication, role-based dashboards for students and doctors, real-time appointment booking, and a digital health records system. Built with a focus on accessibility, smooth UX, and reliable data flow.",
+      "LPUCure is a MERN-stack medical service ecosystem built for the students and staff of Lovely Professional University. It integrates Artificial Intelligence and advanced Data Structures & Algorithms to solve real-world healthcare and logistical challenges across a massive campus — from triage and appointments to medicine logistics and emergency routing.",
     highlights: [
-      "Role-based JWT authentication for students, doctors and admins",
+      "AI-assisted symptom triage and doctor recommendation",
+      "Graph & queue-based DSA for emergency routing on campus",
+      "Role-based dashboards for students, doctors and admins",
       "Real-time appointment scheduling with conflict detection",
-      "Digital prescription & medical history records",
-      "Responsive dashboard with appointment analytics",
     ],
-    stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind", "JWT"],
+    stack: ["React", "Node.js", "Express", "MongoDB", "Python", "AI"],
     image: lpucure,
     accent: "from-cyan-400 to-violet-500",
   },
