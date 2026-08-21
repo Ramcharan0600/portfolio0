@@ -1,43 +1,23 @@
-import portraitImage from "@/assets/ramcharan-portrait.jpg";
-
 export const profile = {
   name: "A Ramcharan",
   role: "AI/ML Engineer | Generative AI | Computer Vision",
-  tagline:
-    "B.Tech CSE student specializing in Generative AI, building practical ML, RAG, computer vision, and AI-assisted applications.",
+  tagline: "B.Tech CSE student specializing in Generative AI, building practical ML, RAG, computer vision, and AI-assisted applications.",
   email: "ramcharan8206@gmail.com",
   phone: "+91 8688661171",
   github: "https://github.com/Ramcharan0600",
   linkedin: "https://www.linkedin.com/",
   location: "Jalandhar, Punjab, India",
-  portrait: portraitImage,
 };
 
-export const experience = [{
-  role: "Machine Learning Engineer Intern",
-  company: "Pratinik Infotech, India",
-  period: "Mar 2026 — May 2026",
-  description: "Cleaned and engineered features for industrial and transactional datasets, built a predictive maintenance model for equipment failures, and developed classification models for fraud detection.",
-}];
+export const experience = [{ role: "Machine Learning Engineer Intern", company: "Pratinik Infotech, India", period: "Mar 2026 — May 2026", description: "Cleaned and engineered features for industrial and transactional datasets, built a predictive maintenance model for equipment failures, and developed classification models for fraud detection." }];
 
 export const education = [
   { school: "Lovely Professional University (LPU)", degree: "B.Tech in Computer Science and Engineering — Generative AI", period: "2024 — 2028", location: "Jalandhar, Punjab, India", result: "9.22 CGPA" },
   { school: "Sai Sri Chaitanya Junior College", degree: "Mathematics, Physics & Chemistry", period: "2022 — 2024", location: "Andhra Pradesh, India", result: "95.3%" },
 ];
 
-export const certificates = [
-  "Azure AI Engineer Associate (AI-102) — Microsoft",
-  "Azure AI Fundamentals (AI-900) — Microsoft",
-  "Azure Data Fundamentals (DP-900) — Microsoft",
-  "Azure Fundamentals (AZ-900) — Microsoft",
-];
-
-export const achievements = [
-  "Led teams in 3+ hackathons and qualified for 2 rounds.",
-  "Participated in national-level hackathons at IIT Jodhpur and IIT Ropar.",
-  "Built multiple AI, ML, Generative AI, computer vision, full-stack, and algorithm-driven projects during B.Tech.",
-];
-
+export const certificates = ["Azure AI Engineer Associate (AI-102) — Microsoft", "Azure AI Fundamentals (AI-900) — Microsoft", "Azure Data Fundamentals (DP-900) — Microsoft", "Azure Fundamentals (AZ-900) — Microsoft"];
+export const achievements = ["Led teams in 3+ hackathons and qualified for 2 rounds.", "Participated in national-level hackathons at IIT Jodhpur and IIT Ropar.", "Built multiple AI, ML, Generative AI, computer vision, full-stack, and algorithm-driven projects during B.Tech."];
 export const skills = [
   { group: "Programming", items: ["Python", "SQL"] },
   { group: "Machine Learning", items: ["Scikit-learn", "Feature Engineering", "Classification", "Model Evaluation", "TF-IDF", "Logistic Regression"] },
@@ -48,34 +28,9 @@ export const skills = [
 ];
 
 export type Project = { slug: string; title: string; category: string; period: string; short: string; description: string; highlights: string[]; stack: string[]; accent: string; metric?: string };
-
 export const projects: Project[] = [
-  {
-    slug: "chest-xray-pneumonia", title: "Chest X-Ray Pneumonia Classification", category: "Computer Vision", period: "Aug 2026",
-    short: "MobileNetV2-based pediatric chest X-ray classifier with Grad-CAM interpretability.",
-    description: "A deep learning image classification pipeline using ImageNet-pretrained MobileNetV2 to classify pediatric chest X-rays as NORMAL or PNEUMONIA, with training-only augmentation and Grad-CAM explanations.",
-    highlights: ["224×224 preprocessing with MobileNetV2 normalization", "Training-only rotation, translation and zoom augmentation", "78.04% test accuracy, 84.93% pneumonia F1-score and 94.69% ROC-AUC", "98.97% pneumonia recall with Grad-CAM visual explanations"],
-    stack: ["Python", "TensorFlow", "Keras", "MobileNetV2", "Scikit-learn", "Grad-CAM"], accent: "from-slate-200 via-slate-400 to-cyan-300", metric: "94.69% ROC-AUC",
-  },
-  {
-    slug: "rag-chatbot", title: "RAG Chatbot", category: "Generative AI", period: "Aug 2026",
-    short: "Context-grounded document assistant with vector retrieval, contextual compression and reranking.",
-    description: "A Streamlit Retrieval-Augmented Generation chatbot that ingests PDF, TXT, DOCX and CSV documents, retrieves relevant context from ChromaDB, reranks results with Cohere, and generates grounded responses through multiple model providers.",
-    highlights: ["Document ingestion, chunking and vector embeddings", "ChromaDB semantic retrieval with contextual compression", "Cohere reranking for higher-quality retrieved context", "Evaluated correctness, faithfulness, relevancy, context precision and recall"],
-    stack: ["Python", "Streamlit", "LangChain", "ChromaDB", "Cohere", "OpenAI", "Gemini", "Hugging Face"], accent: "from-slate-200 via-indigo-300 to-violet-500", metric: "82% answer correctness",
-  },
-  {
-    slug: "medical-chatbot", title: "Medical Chatbot", category: "AI Symptom Triage", period: "Jun 2026 — Jul 2026",
-    short: "ML symptom classifier paired with Gemini for plain-language health guidance.",
-    description: "A Flask-based AI-assisted symptom triage application combining a custom TF-IDF + Logistic Regression classifier with Gemini API explanations, keeping ML predictions separate from generative responses.",
-    highlights: ["TF-IDF + Logistic Regression symptom classification pipeline", "Stratified model validation and Pandas data processing", "Gemini API for contextual plain-language explanations", "Gunicorn deployment and Joblib model persistence"],
-    stack: ["Python", "Flask", "Scikit-learn", "TF-IDF", "Logistic Regression", "Gemini API", "Gunicorn"], accent: "from-slate-200 via-cyan-300 to-sky-500",
-  },
-  {
-    slug: "lpucure", title: "LPUCure", category: "Full-Stack + AI", period: "Apr 2026 — May 2026",
-    short: "MERN medical service platform using six algorithm-driven modules for campus healthcare and logistics.",
-    description: "A MERN-stack medical platform for LPU students and staff, combining AI-assisted healthcare features with algorithmic modules for routing, budgeting, scheduling, and campus logistics.",
-    highlights: ["MERN stack with Flask integration for AI services", "Six algorithm-driven modules including Dijkstra, 0/1 Knapsack, Greedy, BFS and DFS", "AI chatbot for medical appointment booking and tracking", "Designed around real campus healthcare and logistics workflows"],
-    stack: ["MongoDB", "Express.js", "React", "Node.js", "Flask", "Algorithms"], accent: "from-slate-200 via-emerald-300 to-cyan-400",
-  },
+  { slug: "chest-xray-pneumonia", title: "Chest X-Ray Pneumonia Classification", category: "Computer Vision", period: "Aug 2026", short: "MobileNetV2-based pediatric chest X-ray classifier with Grad-CAM interpretability.", description: "A deep learning image classification pipeline using ImageNet-pretrained MobileNetV2 to classify pediatric chest X-rays as NORMAL or PNEUMONIA, with training-only augmentation and Grad-CAM explanations.", highlights: ["224×224 preprocessing with MobileNetV2 normalization", "Training-only rotation, translation and zoom augmentation", "78.04% test accuracy, 84.93% pneumonia F1-score and 94.69% ROC-AUC", "98.97% pneumonia recall with Grad-CAM visual explanations"], stack: ["Python", "TensorFlow", "Keras", "MobileNetV2", "Scikit-learn", "Grad-CAM"], accent: "from-slate-200 via-slate-400 to-cyan-300", metric: "94.69% ROC-AUC" },
+  { slug: "rag-chatbot", title: "RAG Chatbot", category: "Generative AI", period: "Aug 2026", short: "Context-grounded document assistant with vector retrieval, contextual compression and reranking.", description: "A Streamlit Retrieval-Augmented Generation chatbot that ingests PDF, TXT, DOCX and CSV documents, retrieves relevant context from ChromaDB, reranks results with Cohere, and generates grounded responses through multiple model providers.", highlights: ["Document ingestion, chunking and vector embeddings", "ChromaDB semantic retrieval with contextual compression", "Cohere reranking for higher-quality retrieved context", "Evaluated correctness, faithfulness, relevancy, context precision and recall"], stack: ["Python", "Streamlit", "LangChain", "ChromaDB", "Cohere", "OpenAI", "Gemini", "Hugging Face"], accent: "from-slate-200 via-indigo-300 to-violet-500", metric: "82% answer correctness" },
+  { slug: "medical-chatbot", title: "Medical Chatbot", category: "AI Symptom Triage", period: "Jun 2026 — Jul 2026", short: "ML symptom classifier paired with Gemini for plain-language health guidance.", description: "A Flask-based AI-assisted symptom triage application combining a custom TF-IDF + Logistic Regression classifier with Gemini API explanations, keeping ML predictions separate from generative responses.", highlights: ["TF-IDF + Logistic Regression symptom classification pipeline", "Stratified model validation and Pandas data processing", "Gemini API for contextual plain-language explanations", "Gunicorn deployment and Joblib model persistence"], stack: ["Python", "Flask", "Scikit-learn", "TF-IDF", "Logistic Regression", "Gemini API", "Gunicorn"], accent: "from-slate-200 via-cyan-300 to-sky-500" },
+  { slug: "lpucure", title: "LPUCure", category: "Full-Stack + AI", period: "Apr 2026 — May 2026", short: "MERN medical service platform using six algorithm-driven modules for campus healthcare and logistics.", description: "A MERN-stack medical platform for LPU students and staff, combining AI-assisted healthcare features with algorithmic modules for routing, budgeting, scheduling, and campus logistics.", highlights: ["MERN stack with Flask integration for AI services", "Six algorithm-driven modules including Dijkstra, 0/1 Knapsack, Greedy, BFS and DFS", "AI chatbot for medical appointment booking and tracking", "Designed around real campus healthcare and logistics workflows"], stack: ["MongoDB", "Express.js", "React", "Node.js", "Flask", "Algorithms"], accent: "from-slate-200 via-emerald-300 to-cyan-400" },
 ];
